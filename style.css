@@ -4,5 +4,61 @@
   box-sizing: border-box;
 }
 body {
-  color: rgb(21, 124, 168);
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+}
+.header {
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__subNav__one {
+  margin-bottom: 10px;
+}
+.header__subNav__one ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+.header__subNav__two {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__subNav__container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 5px 10px;
+  margin-left: 3rem;
+}
+
+.header__subNav__container p {
+  font-size: 15px;
+  color: rgb(101, 101, 101);
+}
+.header__subNav__container input {
+  border: none;
+  outline: none;
+}
+
+/* Name of the university */
+
+.nameOfUniversity {
+  background-color: #dddddd;
+  padding: 10px 0;
+}
+
+.nameOfUniversity__container {
+  max-width: 98%;
+  margin: 0 auto;
 }
