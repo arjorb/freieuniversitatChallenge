@@ -238,3 +238,66 @@ a {
   color: gray;
   cursor: pointer;
 }
+
+/* UNIversity news  */
+.news {
+  background-color: #d9e8f7;
+  padding: 20px 0;
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.news-header p {
+  font-size: 22px;
+}
+.news-header .block {
+  width: 100px;
+  height: 30px;
+  background-color: #0566cc;
+}
+
+.featured {
+  width: 90vw;
+  margin: 30px auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.featured-col {
+  flex-basis: 30%;
+  background-color: #dddddd;
+}
+
+.featured-col img {
+  width: 100%;
+}
+.content {
+  padding: 20px 10px;
+  display: flex;
+}
+.content p {
+  font-size: 24px;
+  color: #0566cc;
+}
+.content i {
+  font-size: 20px;
+  color: #0566cc;
+}
+
+.footer {
+  padding: 20px 10px;
+  color: rgb(124, 124, 124);
+}
+
+@media (max-width: 700px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
