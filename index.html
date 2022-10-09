@@ -6,56 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
-      integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <title>FREIE UNIVERSITÄT BERLIN</title>
   </head>
   <body>
     <section class="header">
-      <div class="header__left">
-        <img src="assets/logo.png" alt="" />
+      <!-- Subnavigation -->
+      <div class="subnav">
+        <div class="subnav-logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <div class="subnav-navigation">
+          <div class="subnav-navigation-one">
+            <ul>
+              <li><a href="">Homepage</a></li>
+              <li><a href="">Index</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Legal Notice</a></li>
+              <li><a href="">Data Protection Policy</a></li>
+              <li><a href="">Emergencies</a></li>
+              <li><a href="">Accessibility Statement</a></li>
+            </ul>
+          </div>
+          <div class="subnav-navigation-two">
+            <div class="subnav-navigation-col">
+              <p>EN</p>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="subnav-navigation-col">
+              <p>Quicklinks</p>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="subnav-navigation-col">
+              <p>Information for</p>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="subnav-navigation-col">
+              <input type="text" placeholder="Search with google" />
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="header__right">
-        <div class="header__subNav__one">
+
+      <!-- main title -->
+      <div class="university">
+        <div class="university-title">
+          <p>FREIE UNIVERSITÄT BERLIN</p>
+        </div>
+      </div>
+
+      <!-- Main Navigation  -->
+      <div class="navigation">
+        <div class="navigation-item">
           <ul>
-            <li><a href="">Homepage</a></li>
-            <li><a href="">Index</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Legal Notice</a></li>
-            <li><a href="">Data Protection Policy</a></li>
-            <li><a href="">Emergencies</a></li>
-            <li><a href="">Accessibility Statement</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">EDUCATION</a></li>
+            <li><a href="">RESEARCH</a></li>
+            <li><a href="">DEPARTMENT</a></li>
+            <li><a href="">INTERNATIONAL</a></li>
+            <li><a href="">EXCELLENCE STRATEGY</a></li>
           </ul>
         </div>
-        <div class="header__subNav__two">
-          <div class="header__subNav__container">
-            <p>EN</p>
-            <i class="fa-regular fa-chevron-down"></i>
-          </div>
-          <div class="header__subNav__container">
-            <p>Quicklinks</p>
-            <i class="fa-regular fa-chevron-down"></i>
-          </div>
-          <div class="header__subNav__container">
-            <p>Information for</p>
-            <i class="fa-regular fa-chevron-down"></i>
-          </div>
-          <div class="header__subNav__container">
-            <input type="text" placeholder="Search with Google" />
-            <i class="fa-regular fa-chevron-down"></i>
-          </div>
+      </div>
+    </section>
+    <!-- mobile section  -->
+    <section class="mobo-header">
+      <div class="mobo-subnav">
+        <p>FREIE UNIVERSITÄT BERLIN</p>
+        <div class="mobo-subnav-icon">
+          <i class="fa fa-search"></i>
+          <i class="fa fa-home"></i>
+        </div>
+      </div>
+
+      <div class="mobo-university">
+        <div class="mobo-university-title">
+          <p>FREIE UNIVERSITÄT BERLIN</p>
+        </div>
+      </div>
+
+      <div class="mobo-main-menu">
+        <div class="mobo-main-menu-container">
+          <p>Menu</p>
+          <i class="fa fa-bars"></i>
         </div>
       </div>
     </section>
 
-    <!-- Name of the university -->
+    <!-- HERO SECTION  -->
 
-    <section class="nameOfUniversity">
-      <div class="nameOfUniversity__container">
-        <p>FREIE UNIVERSITÄT BERLIN</p>
+    <section class="hero">
+      <div class="hero-container">
+        <img src="assets/wintersemester.jpg" alt="" />
+        <div class="hero-container-content">
+          <h4>Joining us this winter semester?</h4>
+          <p>
+            Our Orientation Days for new students will be taking place from
+            October 4.
+          </p>
+          <p>Image Credit: Bernd Wannenmacher</p>
+        </div>
+      </div>
+
+      <div class="bullet">
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+    </section>
+
+    <section class="coronavirus">
+      <div class="Coronavirus-pandemic">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+        <p>Coronavirus Pandemic: Current Information for University Members</p>
       </div>
     </section>
   </body>

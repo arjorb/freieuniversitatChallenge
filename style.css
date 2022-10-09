@@ -11,54 +11,230 @@ a {
   text-decoration: none;
   font-size: 14px;
 }
-.header {
-  max-width: 98%;
-  margin: 0 auto;
-  padding: 20px 0;
+.fa {
+  color: #6b9e1f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.subnav {
+  width: 95vw;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__subNav__one {
-  margin-bottom: 10px;
-}
-.header__subNav__one ul li {
-  list-style: none;
-  display: inline;
-  padding: 0 5px;
-  font-size: 15px;
+
+.subnav-navigation-one {
+  margin-bottom: 1rem;
 }
 
-.header__subNav__two {
+.subnav-navigation-one ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.subnav-navigation-one ul li a:hover {
+  text-decoration: underline;
+}
+
+.subnav-navigation-two {
   display: flex;
   justify-content: flex-end;
-}
-.header__subNav__container {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  border: 1px solid rgb(218, 218, 218);
-  padding: 5px 10px;
-  margin-left: 3rem;
+  gap: 1rem;
+  font-size: 14px;
 }
 
-.header__subNav__container p {
-  font-size: 15px;
-  color: rgb(101, 101, 101);
+.subnav-navigation-col {
+  display: flex;
+
+  gap: 1rem;
+  border: 1px solid #333;
+  padding: 5px 10px;
 }
-.header__subNav__container input {
+.subnav-navigation-col input {
   border: none;
   outline: none;
 }
 
-/* Name of the university */
-
-.nameOfUniversity {
+/* university title  */
+.university {
   background-color: #dddddd;
+  margin-top: 1rem;
+}
+
+.university-title {
+  width: 95vw;
+  margin: 0 auto;
   padding: 10px 0;
 }
 
-.nameOfUniversity__container {
-  max-width: 98%;
+.university-title p {
+  color: white;
+}
+
+/* main navigation  */
+
+.navigation {
+  background-color: #6b9e1f;
+}
+.navigation-item {
+  width: 95vw;
   margin: 0 auto;
+}
+.navigation-item ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 15px 0;
+}
+
+.navigation-item ul li a {
+  font-size: 18px;
+  color: white;
+}
+
+.navigation-item ul li a:hover {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+/* mobo navigation  */
+.mobo-subnav {
+  width: 95vw;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobo-header {
+  display: none;
+}
+
+.mobo-subnav-icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.mobo-university {
+  background-color: #dddddd;
+  margin-top: 1rem;
+}
+.mobo-university-title {
+  width: 95vw;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.mobo-main-menu {
+  background: #6b9e1f;
+}
+.mobo-main-menu-container {
+  width: 95vw;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.mobo-main-menu-container .fa {
+  color: white;
+}
+@media (max-width: 700px) {
+  .header {
+    display: none;
+  }
+  .mobo-header {
+    display: block;
+  }
+}
+
+/* HERO SECTION  */
+
+.hero {
+  width: 90vw;
+  margin: 3rem auto;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero-container img {
+  width: 100%;
+}
+.hero-container-content {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  width: 500px;
+  height: 200px;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.hero-container-content h4 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.hero-container-content h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero-container-content p {
+  margin-bottom: 1rem;
+}
+
+.hero-container-content p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .hero-container-content {
+    width: 100%;
+    margin: 0 auto;
+    position: unset;
+  }
+}
+
+.bullet {
+  margin: 1rem 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Corona */
+
+.coronavirus {
+  background: #dddddd;
+  padding: 30px 0;
+}
+
+.Coronavirus-pandemic {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 20px;
+  color: #0566cc;
+}
+
+.Coronavirus-pandemic .fa-solid {
+  font-size: 40px;
+}
+
+.Coronavirus-pandemic:hover {
+  color: gray;
+  cursor: pointer;
 }
